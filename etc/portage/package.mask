@@ -1,1 +1,3 @@
 >=dev-libs/libical-1.0-r2
+>mail-client/evolution-3.12.6
+>gnome-extra/evolution-data-server-3.12.6
