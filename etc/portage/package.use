@@ -1,0 +1,161 @@
+
+sys-boot/grub:2 device-mapper
+sys-boot/grub truetype
+
+# required by gnome-base/gdm-3.12.2
+# required by gnome-base/gnome-shell-3.12.2
+# required by virtual/notification-daemon-0[gnome]
+# required by x11-libs/libnotify-0.7.6
+# required by gnome-base/gnome-settings-daemon-3.12.2
+# required by gnome-base/gnome-control-center-3.12.1-r1
+# required by net-libs/gnome-online-accounts-3.12.4[gnome]
+# required by gnome-base/gvfs-1.20.2[gnome-online-accounts]
+# required by gnome-base/gnome-core-libs-3.12.0
+# required by gnome-base/gnome-light-3.12.0
+# required by gnome-light (argument)
+## >=sys-auth/pambase-20140313 systemd
+# required by x11-libs/glamor-0.6.0-r1
+# required by x11-drivers/xf86-video-ati-7.4.0[glamor]
+# required by x11-base/xorg-drivers-1.16[video_cards_radeon]
+# required by x11-base/xorg-server-1.16.0[xorg]
+# required by gnome-base/gdm-3.12.2
+# required by gnome-base/gnome-shell-3.12.2
+# required by virtual/notification-daemon-0[gnome]
+# required by x11-libs/libnotify-0.7.6
+# required by gnome-base/gnome-settings-daemon-3.12.2
+# required by gnome-base/gnome-control-center-3.12.1-r1
+# required by net-libs/gnome-online-accounts-3.12.4[gnome]
+# required by gnome-base/gvfs-1.20.2[gnome-online-accounts]
+# required by gnome-base/gnome-core-libs-3.12.0
+# required by gnome-base/gnome-light-3.12.0
+# required by gnome-light (argument)
+>=media-libs/mesa-10.2.4 gbm
+
+# required by net-misc/networkmanager-0.9.8.10-r1[avahi]
+# required by net-libs/libproxy-0.4.11-r2[networkmanager]
+# required by net-libs/glib-networking-2.40.1-r1[libproxy]
+# required by net-libs/libsoup-2.46.0-r1
+# required by gnome-base/gnome-control-center-3.12.1-r1[colord]
+# required by net-libs/gnome-online-accounts-3.12.4[gnome]
+# required by gnome-base/gvfs-1.20.2[gnome-online-accounts]
+# required by gnome-base/gnome-core-libs-3.12.0
+# required by gnome-base/gnome-light-3.12.0
+# required by gnome-light (argument)
+>=net-dns/avahi-0.6.31-r5 autoipd
+>=gnome-base/gvfs-1.20.2 gtk
+# required by net-print/cups-1.7.4
+# required by net-print/cups-filters-1.0.54
+>=app-text/ghostscript-gpl-9.14 cups
+>=media-plugins/gst-plugins-meta-1.0-r2 ffmpeg
+
+# required by net-misc/vinagre-3.12.2[avahi]
+# required by gnome-base/gnome-extra-apps-3.12.0
+# required by gnome-base/gnome-3.12.0[extras]
+# required by gnome (argument)
+>=net-dns/avahi-0.6.31-r5 gtk3
+# required by gnome-extra/gnome-contacts-3.12.0
+# required by net-im/empathy-3.12.4[gnome]
+# required by gnome-base/gnome-core-apps-3.12.0
+# required by gnome-base/gnome-3.12.0
+# required by gnome (argument)
+>=dev-libs/folks-0.9.7.1 eds
+
+# required by www-client/chromium-37.0.2062.68
+# required by chromium (argument)
+>=dev-libs/libxml2-2.9.1-r4 icu
+# required by www-client/chromium-37.0.2062.68
+# required by chromium (argument)
+>=sys-libs/zlib-1.2.8-r1 minizip
+
+# required by dev-lang/ruby-2.1.2
+# required by virtual/rubygems-7
+# required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby21,-test]
+>=dev-ruby/rake-10.3.2 ruby_targets_ruby21
+# required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby21]
+# required by dev-lang/ruby-2.1.2[rdoc]
+# required by virtual/rubygems-7
+# required by net-libs/webkit-gtk-2.4.4
+# required by net-libs/gnome-online-accounts-3.12.4
+# required by gnome-base/gnome-control-center-3.12.1-r1[gnome-online-accounts]
+# required by gnome-control-center (argument)
+>=dev-ruby/racc-1.4.11 ruby_targets_ruby21
+# required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby21]
+# required by dev-lang/ruby-2.1.2[rdoc]
+# required by virtual/rubygems-7
+# required by net-libs/webkit-gtk-2.4.4
+# required by net-libs/gnome-online-accounts-3.12.4
+# required by gnome-base/gnome-control-center-3.12.1-r1[gnome-online-accounts]
+# required by gnome-control-center (argument)
+>=dev-ruby/json-1.8.1 ruby_targets_ruby21
+# required by dev-lang/ruby-2.1.2[rdoc]
+# required by virtual/rubygems-7
+# required by net-libs/webkit-gtk-2.4.4
+# required by net-libs/gnome-online-accounts-3.12.4
+# required by gnome-base/gnome-control-center-3.12.1-r1[gnome-online-accounts]
+# required by gnome-control-center (argument)
+>=dev-ruby/rdoc-4.0.1-r2 ruby_targets_ruby21
+
+# required by media-gfx/splashutils-1.5.4.4-r4[mng]
+# required by media-gfx/splashutils (argument)
+>=media-libs/lcms-1.19-r2:0 static-libs
+# required by media-gfx/splashutils-1.5.4.4-r4[truetype]
+# required by media-gfx/splashutils (argument)
+>=media-libs/freetype-2.5.3-r1 static-libs
+# required by virtual/jpeg-0-r2
+# required by media-gfx/splashutils-1.5.4.4-r4
+# required by media-gfx/splashutils (argument)
+>=media-libs/libjpeg-turbo-1.3.1 static-libs
+# required by media-gfx/splashutils-1.5.4.4-r4[truetype]
+# required by media-gfx/splashutils (argument)
+>=app-arch/bzip2-1.0.6-r7 static-libs
+# required by media-gfx/splashutils-1.5.4.4-r4[mng]
+# required by media-gfx/splashutils (argument)
+>=media-libs/libmng-2.0.2-r1 static-libs
+# required by media-gfx/splashutils-1.5.4.4-r4[png]
+# required by media-gfx/splashutils (argument)
+>=media-libs/libpng-1.6.12 static-libs
+# required by media-gfx/splashutils-1.5.4.4-r4
+# required by media-gfx/splashutils (argument)
+>=virtual/jpeg-0-r2:0 static-libs
+# required by media-gfx/splashutils-1.5.4.4-r4[gpm]
+# required by media-gfx/splashutils (argument)
+>=sys-libs/gpm-1.20.7-r2 static-libs
+# required by media-gfx/splashutils-1.5.4.4-r4[png,truetype]
+# required by media-gfx/splashutils (argument)
+>=sys-libs/zlib-1.2.8-r1 static-libs
+media-gfx/splashutils -truetype
+# required by dev-lang/ruby-2.0.0_p481
+# required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby20]
+# required by dev-lang/ruby-1.9.3_p547[rdoc]
+# required by dev-ruby/json-1.8.1[ruby_targets_ruby19]
+# required by dev-lang/ruby-2.1.2
+# required by dev-ruby/racc-1.4.11[ruby_targets_ruby21]
+>=dev-ruby/rake-10.3.2 ruby_targets_ruby20 ruby_targets_ruby19
+# required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby20]
+# required by dev-lang/ruby-1.9.3_p547[rdoc]
+# required by dev-ruby/json-1.8.1[ruby_targets_ruby19]
+# required by dev-lang/ruby-2.0.0_p481
+# required by dev-ruby/rake-10.3.2[ruby_targets_ruby20]
+# required by dev-lang/ruby-2.1.2
+# required by dev-ruby/rubygems-2.0.14-r1[ruby_targets_ruby19]
+# required by virtual/rubygems-6
+>=dev-ruby/racc-1.4.11 ruby_targets_ruby20 ruby_targets_ruby19
+# required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby20]
+# required by dev-lang/ruby-1.9.3_p547[rdoc]
+# required by dev-ruby/rake-10.3.2[ruby_targets_ruby19]
+# required by dev-lang/ruby-2.0.0_p481
+# required by virtual/rubygems-6
+# required by dev-ruby/racc-1.4.11[ruby_targets_ruby20,-test]
+>=dev-ruby/json-1.8.1 ruby_targets_ruby20 ruby_targets_ruby19
+# required by dev-lang/ruby-2.0.0_p481[rdoc]
+# required by dev-ruby/json-1.8.1[ruby_targets_ruby20]
+# required by dev-lang/ruby-2.1.2
+# required by dev-ruby/rake-10.3.2[ruby_targets_ruby21]
+# required by dev-ruby/racc-1.4.11[-test,ruby_targets_ruby19]
+>=dev-ruby/rdoc-4.0.1-r2 ruby_targets_ruby20 ruby_targets_ruby19
+
+>=virtual/notification-daemon-0 -gnome
+>=dev-ruby/rubygems-2.2.2 ruby_targets_ruby19 ruby_targets_ruby20 ruby_targets_ruby21
+
+>=dev-vcs/git-2.1.1 subversion
+>=dev-vcs/subversion-1.8.10 perl -dso
