@@ -17,6 +17,7 @@ GRUB_DISTRIBUTOR="Gentoo"
 # Boot the default entry this many seconds after the menu is displayed
 #GRUB_TIMEOUT=5
 #GRUB_TIMEOUT_STYLE=menu
+GRUB_TIMEOUT=5
 
 # Append parameters to the linux kernel command line
 #GRUB_CMDLINE_LINUX=""
@@ -28,6 +29,8 @@ GRUB_DISTRIBUTOR="Gentoo"
 #
 # Boot with systemd instead of sysvinit (openrc)
 # GRUB_CMDLINE_LINUX="init=/usr/lib/systemd/systemd"
+#GRUB_CMDLINE_LINUX="vga=791 splash=silent,theme:default console=tty1 quiet  dolvm  rootfstype=ext4"
+GRUB_CMDLINE_LINUX="dolvm resume=/dev/mapper/gentoo-swap rootfstype=ext4 init=/usr/lib/systemd/systemd"
 
 # Append parameters to the linux kernel command line for non-recovery entries
 #GRUB_CMDLINE_LINUX_DEFAULT=""
@@ -54,3 +57,5 @@ GRUB_DISTRIBUTOR="Gentoo"
 
 # Uncomment to disable generation of recovery mode menu entries
 #GRUB_DISABLE_RECOVERY=true
+
+GRUB_PRELOAD_MODULES="part_gpt lvm ext2"
