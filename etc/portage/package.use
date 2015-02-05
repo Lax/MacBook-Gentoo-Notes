@@ -156,6 +156,15 @@ media-gfx/splashutils -truetype
 
 >=virtual/notification-daemon-0 -gnome
 >=dev-ruby/rubygems-2.2.2 ruby_targets_ruby19 ruby_targets_ruby20 ruby_targets_ruby21
+>=virtual/rubygems-10 ruby_targets_ruby19 ruby_targets_ruby20 ruby_targets_ruby21
 
 >=dev-vcs/git-2.1.1 subversion
 >=dev-vcs/subversion-1.8.10 perl -dso
+>=media-gfx/exiv2-0.24-r1 xmp
+>=sys-fs/aufs3-3_p20150126 kernel-patch
+>=app-office/akonadi-server-1.13.0 sqlite qt5
+>=media-libs/cogl-1.18.2-r1 gles2
+>=dev-libs/libxml2-2.9.2 -icu
+>=media-libs/clutter-1.20.0 egl
+>=media-libs/mesa-10.4.3 gles2
+>=dev-python/PyQt4-4.11.1 declarative script sql webkit
