@@ -74,7 +74,6 @@ sys-boot/grub truetype
 # required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby21]
 # required by dev-lang/ruby-2.1.2[rdoc]
 # required by virtual/rubygems-7
-# required by net-libs/webkit-gtk-2.4.4
 # required by net-libs/gnome-online-accounts-3.12.4
 # required by gnome-base/gnome-control-center-3.12.1-r1[gnome-online-accounts]
 # required by gnome-control-center (argument)
@@ -82,14 +81,12 @@ sys-boot/grub truetype
 # required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby21]
 # required by dev-lang/ruby-2.1.2[rdoc]
 # required by virtual/rubygems-7
-# required by net-libs/webkit-gtk-2.4.4
 # required by net-libs/gnome-online-accounts-3.12.4
 # required by gnome-base/gnome-control-center-3.12.1-r1[gnome-online-accounts]
 # required by gnome-control-center (argument)
 >=dev-ruby/json-1.8.1 ruby_targets_ruby21
 # required by dev-lang/ruby-2.1.2[rdoc]
 # required by virtual/rubygems-7
-# required by net-libs/webkit-gtk-2.4.4
 # required by net-libs/gnome-online-accounts-3.12.4
 # required by gnome-base/gnome-control-center-3.12.1-r1[gnome-online-accounts]
 # required by gnome-control-center (argument)
@@ -123,7 +120,7 @@ sys-boot/grub truetype
 # required by media-gfx/splashutils-1.5.4.4-r4[png,truetype]
 # required by media-gfx/splashutils (argument)
 >=sys-libs/zlib-1.2.8-r1 static-libs
-media-gfx/splashutils -truetype
+media-gfx/splashutils -truetype -mng
 # required by dev-lang/ruby-2.0.0_p481
 # required by dev-ruby/rdoc-4.0.1-r2[ruby_targets_ruby20]
 # required by dev-lang/ruby-1.9.3_p547[rdoc]
@@ -168,3 +165,24 @@ media-gfx/splashutils -truetype
 >=media-libs/clutter-1.20.0 egl
 >=media-libs/mesa-10.4.3 gles2
 >=dev-python/PyQt4-4.11.1 declarative script sql webkit
+
+# required by media-gfx/gnome-photos-3.14.2
+# required by gnome-base/gnome-extra-apps-3.14.0-r1
+# required by gnome-base/gnome-3.14.0[extras]
+# required by @selected
+# required by @world (argument)
+>=media-plugins/grilo-plugins-0.2.13 upnp-av
+>=media-plugins/grilo-plugins-0.2.13 tracker
+
+# required by sys-boot/plymouth-0.9.2::gentoo[libkms]
+# required by plymouth (argument)
+>=x11-libs/libdrm-2.4.60 libkms
+
+
+sys-kernel/genkernel-next plymouth
+>=media-gfx/splash-themes-livecd-2007.0-r2 -mng
+
+>=app-editors/gedit-plugins-3.14.1 python charmap git terminal zeitgeist
+>=www-servers/apache-2.4.12-r1 apache2_mpms_prefork
+>=media-libs/lcms-2.6-r1 static-libs
+>=sys-libs/libapparmor-2.8.4 static-libs
