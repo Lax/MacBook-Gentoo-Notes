@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# 呼噜猫 ASCII（不含波纹）
+CAT_ASCII='
+   ))    wWw  wWw()_() ()_()       wWw \\\  ///   _ wW  Ww\\\  ///
+  (o0)-. (O)  (O)(O o) (O o)       (O)_((O)(O)) _||\(O)(O)((O)(O))
+   | (_))/ )  ( \ |^_\  |^_\       / __)| \ || (_'\  (..)  | \ || 
+   | .-'/ /    \ \|(_)) |(_))     / (   ||\\||  (  |  ||   ||\\|| 
+   |(   | \____/ ||  /  |  /     (  _)  || \ |   \ | _||_  || \ | 
+    \)  '. `--' .`)|\\  )|\\      \ \_  ||  ||(\__)|(_/\_) ||  || 
+    (     `-..-' (/  \)(/  \)      \__)(_/  \_)`--.)      (_/  \_)
+        PurrEnjin — Your gentle yet powerful creative engine
+        Morse: .--. ..- .-. .-.    . -. .--- .. -.
+'
+
+# 呼噜波纹数组（呼吸节奏）
+PURR_WAVES=(
+    "        .oOo. purr .oOo."
+    "         oOo. purr .oOo "
+    "          Oo. purr .oO  "
+    "         oOo. purr .oOo "
+)
+
+# 呼噜呼吸动画函数
+purr_breathe() {
+    for cycle in {1..2}; do
+        for wave in "${PURR_WAVES[@]}"; do
+            clear
+            # 猫图
+            echo "$CAT_ASCII" | lolcat -a -d 6 -s 80
+            # 呼噜波纹
+            echo -e "\n$wave" | lolcat -a -d 6 -s 80
+            sleep 0.15
+        done
+    done
+}
+
+# 播放呼噜动画
+purr_breathe
+
+# 系统信息
+neofetch --ascii_distro "Arch" --ascii_colors 4 5 --disable packages resolution \
+         uptime shell cpu memory | lolcat -a -d 5 -s 80
