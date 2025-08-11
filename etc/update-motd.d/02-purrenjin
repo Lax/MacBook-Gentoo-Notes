@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# emerge --ask app-misc/lolcat \
+#             app-misc/neofetch \
+#             app-shells/bash \
+#             sys-apps/coreutils
+
 # 可选猫脸（随机出现）
 CAT_FACES=(
     "(=^･ω･^=)"
